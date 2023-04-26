@@ -1,0 +1,51 @@
+@import url(../../../../fonts.scss);
+
+.search_contact_wrapper{
+    top: 0px;
+    left: 0px;
+    display: flex;
+    margin: 0 0 0 15px;
+    width: 100%;
+}
+
+.search_contact_input_wrapper{
+    position: relative;
+    width: 100%;
+    margin: 0 30px 0 0;
+}
+
+#search_contact_input{
+    font-family: "Main_font";
+    font-size: 1.5em;
+    min-width: 15rem;
+    display: block;
+    width: 100%;
+    padding: 0.375rem 0.75rem;
+    border-radius: 15px;
+    border: none;
+    outline: none;
+    transition: box-shadow 0.15s ease-in-out;
+    padding: 5px 0 5px 40px;
+    margin: 15px 0 0 3px;
+}
+
+#search_contact_input::placeholder{
+    color: rgb(162, 162, 162);
+}
+
+#search_contact_input:focus{
+    border: none;
+    box-shadow: 0 0 0 0.2rem rgba(255, 99, 71, 1);
+}
+
+
+.search_contact_btn{
+    position: absolute;
+    top: 15px;
+    left: 0;
+    width: 2rem;
+    height: 2rem;
+    background: url(loop.svg);
+    opacity: 0.4;
+}
+

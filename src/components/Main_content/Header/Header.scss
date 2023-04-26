@@ -1,0 +1,29 @@
+@import url(../../../fonts.scss);
+
+$burger_bold: 4px;
+
+.header{
+    display: flex;
+    width: 100%;
+    border-bottom: 2px rgb(162, 162, 162) solid;
+    height: 8%;
+    align-items: center;
+    position: relative;
+
+    .heaer_certiring_container{
+        width: calc(320px + (550 - 320) * ((100vw - 1000px)) / (1920 - 1000));
+    }
+
+    .contact_info_container{
+        display: flex;
+        align-items: center;
+        justify-content: center;
+        width: calc(100vw - (320px + (550 - 320) * ((100vw - 1000px)) / (1920 - 1000)));
+    }
+
+    .logo{
+        font-family: Main_font;
+        font-size: 4rem;
+        margin: 0 0 0 15px;
+    }
+}

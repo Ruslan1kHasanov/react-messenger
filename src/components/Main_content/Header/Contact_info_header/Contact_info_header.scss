@@ -1,0 +1,22 @@
+@import url(../../../../fonts.scss);
+
+.contact_info_header{
+    display: flex;
+    align-items: center;
+    cursor: pointer;
+}
+
+.contact_profile_name_container{
+    display: flex;
+    flex-direction: column;
+    align-items: center;
+    font-family: Main_font;
+}
+
+.contact_profile_ava{
+    background-color: rgb(255, 99, 71);
+    width: 3rem;
+    height: 3rem;
+    border-radius: 100%;
+    margin: 0 15px 0 0;
+}

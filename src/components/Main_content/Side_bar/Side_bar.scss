@@ -1,0 +1,71 @@
+$main_color: rgb(255, 99, 71);
+$main_color_selected: rgba(255, 99, 71, 0.25);
+
+
+.side_bar_wrapper{
+    height: 100%;
+    position: relative;
+    border-right: 2px rgb(162, 162, 162) solid;
+    width: calc(320px + (550 - 320) * ((100vw - 1000px)) / (1920 - 1000));
+    max-width: 550px;
+    min-width: 320px;
+    
+    .contacts_field{
+        height: 100%;
+        width: calc(100% - 15px);
+        margin: 10px 8px 0 15px;
+        overflow: scroll;
+    }
+
+    .contacts_field:hover::-webkit-scrollbar-thumb{
+            visibility: visible;
+            background-color:rgba(150, 150, 150, 0.2);
+            border-radius: 10px;
+    }
+
+    .add_contact_btn{
+        width: 3.8rem;
+        height: 3.8rem;
+        border-radius: 15px;
+        background-color: $main_color;
+        bottom: 0px;
+        right: 0px;
+        margin: 0 3.8rem 3.8rem 0;
+        position: absolute;
+        cursor: pointer;
+        transition: box-shadow 0.25s ease-in-out;
+    }
+
+    .add_contact_btn:before {
+        content: "+";
+        display: flex; flex-direction: row; align-items: center; justify-content: center;
+        position: relative;
+        height: 50px; width: 50px;
+        font-size: 80px; line-height: 105px; text-align: center; color: white;
+        font-family: serif; font-weight: normal;
+        margin: 0 auto;
+        top: 50%;
+        transform: translate(0, -50%);
+      }
+
+
+    ::-webkit-scrollbar{
+        width: 10px;
+    }
+    
+    ::-webkit-scrollbar-track{
+        background-color:rgba(0, 0, 0, 0);
+        border-radius: 10px;
+    }
+    
+    ::-webkit-scrollbar-thumb{
+        visibility: hidden;
+        background-color:rgba(150, 150, 150, 0.2);
+        border-radius: 10px;
+    }
+
+}
+
+.add_contact_btn:hover{
+    box-shadow: 0 0 0 0.3rem $main_color_selected;
+}

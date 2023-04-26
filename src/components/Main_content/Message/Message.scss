@@ -1,0 +1,48 @@
+.message_container{
+    display: flex;
+    width: 100%;
+
+    .message_bubble{
+        color: azure;
+        background: rgb(255, 99, 71);
+        padding: 10px 5px 10px 5px;
+        margin: 10px 15px 10px 15px;
+        border-radius: 15px;
+
+        .message_sender{
+            font-family: Main_font;
+            margin: 0px 0px 5px 0;
+        }
+
+        .message_text_container{
+            font-family: 'Segoe UI', Tahoma, Geneva, Verdana, sans-serif;
+            font-weight: 600;
+            margin: 0 0 5px 0;
+        }
+
+        .dottom_information_wrapper{
+            width: calc(100% -5px);
+            display: flex;
+            justify-content: flex-end;
+            margin: 0 5px 0 0;
+        }
+
+        .time_of_sending{
+            color: antiquewhite;
+            font-family: Main_font;
+        }
+    }
+}
+
+.self_message_container{
+    justify-content: end;
+}
+
+.outer_message_container{
+    justify-content: start;
+
+    .message_bubble{
+        background: rgb(255, 160, 143);
+    }
+}
+

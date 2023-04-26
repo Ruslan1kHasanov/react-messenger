@@ -1,0 +1,30 @@
+@import url(../../../../fonts.scss);
+
+.contact_container{
+    display: flex;
+    width: 100%;
+    align-items: center;
+    padding: 8px 5px 8px 5px;
+    border-radius: 15px;
+    transition: box-shadow 0.15s ease-in-out;
+}
+
+.contact_ava{
+    width: 4rem;
+    height: 4rem;
+    background-color: rgb(255, 99, 71);
+    border-radius: 100%;
+}
+
+.contact_name_container{
+    font-family: Main_font;
+    padding: 0 0 0 5px;
+
+    .contact_name{
+        margin: 0 0 5px 0;
+    }
+}
+
+.contact_container:hover{
+    box-shadow: 0 0 0 0.2rem rgba(255, 99, 71, 1) inset;
+}
